@@ -25,6 +25,14 @@
           <li><a href="">Гарантия</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
+        <ul>
+          <li><a href="">Виртуальная реальность</a></li>
+          <li><a href="">Фитнес-браслеты</a></li>
+          <li><a href="">Квадрокоптер</a></li>
+          <li><a href="">Моноподы для селфи</a></li>
+          <li><a href="">Умные часы</a></li>
+          <li><a href="">Экшн-камеры</a></li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -38,29 +46,50 @@
         <div>
           <h3>Фильтр:</h3>
         </div>
-        <form>
-          <section>
-            <p>Стоимость</p>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Стоимость</legend>
             <input type="range" min="0" max="100" step="1" value="5000">
-          </section>
-          <section>
-            <p>Цвет</p>
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
             <ul>
-              <li>Чёрный</li>
-              <li>Белый</li>
-              <li>Синий</li>
-              <li>Красный</li>
-              <li>Розовый</li>
+              <li>
+                <input type="checkbox" name="black" id="color-black">
+                <label for="color-black">Чёрный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="white" id="color-white">
+                <label for="color-white">Белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="blue" id="color-blue">
+                <label for="color-blue">Синий</label>
+              </li>
+              <li>
+                <input type="checkbox" name="red" id="color-red">
+                <label for="color-red">Красный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="pink" id="color-pink">
+                <label for="color-pink">Розовый</label>
+              </li>
             </ul>
-          </section>
-          <section>
-            <p>Bluetooth</p>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
             <ul>
-              <li>Есть</li>
-              <li>Нет</li>
+              <li>
+                <input type="radio" name="bluetooth" value="bluetooth-yes" id="bluetooth-yes">
+                <label for="bluetooth-yes">Есть</label>
+              </li>
+              <li>
+                <input type="radio" name="bluetooth" value="bluetooth-no" id="bluetooth-no">
+                <label for="bluetooth-no">Нет</label>
+              </li>
             </ul>
-            <button>Показать</button>
-          </section>
+          </fieldset>
+          <button>Показать</button>
         </form>
       </div>
       <div>
