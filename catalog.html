@@ -3,6 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <style type="text/css" media="screen, print">
+      @font-face {
+        font-family: 'Gilroy Light';
+        src: url('fonts/gilroylight.woff2') format('woff2'),
+             url('fonts/gilroylight.woff') format('woff'),
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Gilroy Extra Bold';
+        src: url('fonts/gilroyextrabold.woff2') format('woff2'),
+             url('fonts/gilroyextrabold.woff') format('woff'),
+        font-weight: 800;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Open Sans';
+        src: url('fonts/opensans.woff2') format('woff2'),
+             url('fonts/opensans.woff') format('woff'),
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Open Sans Light';
+        src: url('fonts/opensanslight.woff2') format('woff2'),
+             url('fonts/opensanslight.woff') format('woff'),
+        font-weight: 300;
+        font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -19,13 +54,13 @@
       <a href="">Сравнить</a>
       <a href="">Корзина</a>
       <nav>
-        <ul>
+        <ul class="navigation-header gilroy-bold">
           <li><a href="catalog.html">Каталог товаров</a></li>
           <li><a href="">Доставка</a></li>
           <li><a href="">Гарантия</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="drop-down-list">
           <li><a href="">Виртуальная реальность</a></li>
           <li><a href="">Фитнес-браслеты</a></li>
           <li><a href="">Квадрокоптер</a></li>
@@ -35,25 +70,25 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h2>Моноподы для селфи</h2>
-      <ul>
+    <main class="inner-page">
+      <h2 class="gilroy-bold">Моноподы для селфи</h2>
+      <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li><a>Моноподы для селфи</a></li>
       </ul>
       <div>
         <div>
-          <h3>Фильтр:</h3>
+          <h3 class="gilroy-bold">Фильтр:</h3>
         </div>
         <form action="https://echo.htmlacademy.ru" method="get" oninput="priceoutput.value=pricerange.value">
-          <fieldset >
-            <legend>Стоимость</legend>
+          <fieldset class="pricerange">
+            <legend class="gilroy-bold">Стоимость</legend>
             <input type="range" name="pricerange" id="pricerange" multiple min="0" max="10000" step="100" value="0 5000">
-            <p>от 0 до <output name="priceoutput">5000</output></p>
+            <p class="gilroy-regular">от 0 до <output name="priceoutput">5000</output></p>
           </fieldset>
-          <fieldset>
-            <legend>Цвет</legend>
+          <fieldset class="color-filter">
+            <legend class="gilroy-bold">Цвет</legend>
             <ul>
               <li>
                 <input type="checkbox" name="black" id="color-black" checked>
@@ -77,8 +112,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Bluetooth</legend>
+          <fieldset class="bluetooth-filter">
+            <legend class="gilroy-bold">Bluetooth</legend>
             <ul>
               <li>
                 <input type="radio" name="bluetooth" value="bluetooth-yes" id="bluetooth-yes" checked>
@@ -90,27 +125,27 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button type="submit" >Показать</button>
         </form>
       </div>
-      <div>
+      <div class="sort-panel">
         <div>
-          <h3>Сортировка:</h3>
-          <ul>
+          <h3 class="gilroy-bold">Сортировка:</h3>
+          <ul class="sort-options">
             <li><button>По цене</button></li>
             <li><button>По типу</button></li>
             <li><button>По популярности</button></li>
           </ul>
-          <ul>
+          <ul class="sort-options">
             <li><button>По возрастанию</button></li>
             <li><button>По убыванию</button></li>
           </ul>
         </div>
-        <div>
+        <div class="catalog-card">
           <section>
             <img src="img/item_1_1.png" width="360" height="380" alt="Любительская селфи-палка">
-            <h3><a href="">Любительская селфи-палка<a></h3>
-            <p>500 руб.</p>
+            <h3 class="gilroy-bold"><a href="">Любительская селфи-палка<a></h3>
+            <p class="gilroy-regular">500 руб.</p>
             <div>
               <button>В корзину</button>
               <button>Добавить к сравнению</button>
@@ -118,8 +153,8 @@
           </section>
           <section>
             <img src="img/item_2_1.png" width="360" height="380" alt="Профессиональная селфи-палка">
-            <h3><a href="">Профессиональная селфи-палка<a></h3>
-            <p>1500 руб.</p>
+            <h3 class="gilroy-bold"><a href="">Профессиональная селфи-палка<a></h3>
+            <p class="gilroy-regular">1500 руб.</p>
             <div>
               <button>В корзину</button>
               <button>Добавить к сравнению</button>
@@ -127,8 +162,8 @@
           </section>
           <section>
             <img src="img/item_3_1.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <h3><a href="">Непотопляемая селфи-палка<a></h3>
-            <p>2500 руб.</p>
+            <h3 class="gilroy-bold"><a href="">Непотопляемая селфи-палка<a></h3>
+            <p class="gilroy-regular">2500 руб.</p>
             <div>
               <button>В корзину</button>
               <button>Добавить к сравнению</button>
@@ -136,14 +171,14 @@
           </section>
           <section>
             <img src="img/item_4_1.png" width="360" height="380" alt="Селфи-палка Следуй за мной">
-            <h3><a href="">Селфи-палка "Следуй за мной"<a></h3>
-            <p>4900 руб.</p>
+            <h3 class="gilroy-bold"><a href="">Селфи-палка "Следуй за мной"<a></h3>
+            <p class="gilroy-regular">4900 руб.</p>
             <div>
               <button>В корзину</button>
               <button>Добавить к сравнению</button>
             </div>
           </section>
-          <ul>
+          <ul class="pagination gilroy-bold">
             <li><a href="">Назад</a></li>
             <li><a href="">1</a></li>
             <li><a href="">2</a></li>
@@ -159,19 +194,19 @@
           <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.151001 0.702054V34.3021H13.381C15.5624 34.3554 17.7309 33.954 19.7487 33.1235C21.7665 32.293 23.5892 31.0515 25.101 29.4781C26.6506 27.9008 27.8665 26.0274 28.6761 23.9697C29.4857 21.9121 29.8724 19.7124 29.813 17.5021C29.8724 15.2917 29.4857 13.092 28.6761 11.0344C27.8665 8.97675 26.6506 7.10336 25.101 5.52605C23.5891 3.95276 21.7663 2.71136 19.7486 1.88085C17.7308 1.05034 15.5623 0.648895 13.381 0.702054H-0.151001ZM7.582 26.9101V8.09105H13.382C14.5845 8.04315 15.7838 8.24682 16.903 8.68901C18.0223 9.13121 19.0369 9.80221 19.882 10.6591C20.7304 11.5767 21.3875 12.6542 21.8149 13.8286C22.2422 15.003 22.4313 16.2508 22.371 17.4991C22.4313 18.7474 22.2423 19.9952 21.8149 21.1696C21.3876 22.344 20.7305 23.4215 19.882 24.3391C19.0371 25.1961 18.0225 25.8672 16.9032 26.3094C15.7839 26.7517 14.5845 26.9552 13.382 26.9071H7.582V26.9101ZM42.382 20.9581H54.464V13.6581H42.378V8.09105H55.669V0.702054H34.645V34.3021H55.91V26.9101H42.378V20.9581H42.382ZM78.725 34.3021L89.744 0.702054H81.286L73.795 25.4221L66.304 0.702054H57.847L68.866 34.3021H78.725ZM93.125 34.3021H100.858V0.702054H93.125V34.3021ZM131.74 32.8861C134.233 31.574 136.321 29.6076 137.781 27.1981L131.111 23.3581C130.381 24.659 129.279 25.7121 127.946 26.3821C126.505 27.1263 124.903 27.5041 123.282 27.4821C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.7461C115.195 23.7792 114.489 22.6394 114.028 21.3943C113.568 20.1492 113.362 18.8242 113.423 17.4981C113.362 16.1719 113.568 14.8469 114.028 13.6018C114.489 12.3567 115.195 11.2169 116.105 10.2501C117.048 9.32428 118.173 8.60339 119.408 8.13258C120.643 7.66177 121.962 7.45119 123.282 7.51405C124.893 7.49104 126.486 7.86178 127.921 8.59405C129.263 9.27186 130.373 10.3327 131.111 11.6421L137.781 7.80205C136.294 5.39752 134.191 3.43384 131.691 2.11405C129.109 0.72096 126.216 0.0027445 123.282 0.0260544C113.503 -0.245946 105.485 7.71705 105.691 17.4981C105.483 27.2791 113.5 35.2451 123.279 34.9741C126.229 35.0013 129.138 34.2831 131.737 32.8861H131.74ZM149.621 20.9581H161.703V13.6581H149.618V8.09105H162.908V0.702054H141.885V34.3021H163.15V26.9101H149.618V20.9581H149.621Z" fill="#F0C52E"/>
         </svg>
       </a>
-      <ul>
+      <ul class="footer-button">
         <li><a href="">Войти</a></li>
         <li><a href="">Сравнить</a></li>
         <li><a href="">Корзина</a></li>
       </ul>
       <p>г. Москва, ул. Строителей, 15</p>
-      <ul>
+      <ul class="footer-services gilroy-bold">
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
       <p>Тел.: +7(495)495-95-95</p>
-      <ul>
+      <ul class="footer-social">
         <li><a href="#"><img src="img/logo_facebook.svg" width="32" height="32" alt="Фейсбук"></a></li>
         <li><a href="#"><img src="img/logo_instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
         <li><a href="#"><img src="img/logo_twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
