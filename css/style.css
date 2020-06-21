@@ -15,6 +15,38 @@
   --status-negative: #F6DADA;
 }
 
+@font-face {
+  font-family: 'Gilroy Light', Impact, fantasy;
+  src: url('fonts/gilroylight.woff2') format('woff2'),
+       url('fonts/gilroylight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy', Impact, fantasy;
+  src: url('fonts/gilroyextrabold.woff2') format('woff2'),
+       url('fonts/gilroyextrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans', Arial, sans-serif;
+  src: url('fonts/opensans.woff2') format('woff2'),
+       url('fonts/opensans.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Light', Arial, sans-serif;
+  src: url('fonts/opensanslight.woff2') format('woff2'),
+       url('fonts/opensanslight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
   min-width: 960px;
   margin: 0;
@@ -37,72 +69,81 @@ img {
   height: auto;
 }
 
-ul {
-  list-style-type: none;
-}
-
-.gilroy-bold {
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 800;
-}
-
-.gilroy-regular {
-  font-family: 'Gilroy Light';
-  font-style: normal;
-  font-weight: 300;
-}
-
 .navigation-header {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .drop-down-list {
   font-size: 15px;
   line-height: 20px;
+  list-style-type: none;
 }
 
-.slider h2{
+.slide h2{
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 47px;
   line-height: 58px;
 }
 
-.slider table {
+.slide table {
+  font-family: "Gilroy Light";
+  font-weight: 300;
   letter-spacing: 0.1em;
 }
 
-.slider th {
+.slide th {
   font-size: 36px;
   line-height: 43px;
 }
 
-.slider td {
+.slide td {
   font-size: 13px;
   line-height: 16px;
 }
 
 .text-button {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
+.popular {
+  list-style-type: none;
+}
+
 .popular p {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
 }
 
+.service-menu {
+  list-style-type: none;
+}
+
 .service h3 {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
 }
 
 .service li {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
@@ -113,34 +154,52 @@ ul {
   letter-spacing: 0.1em;
 }
 
+.logotypes-list {
+  list-style-type: none;
+}
+
 .info-block h2 {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
 }
 
-.info-block  li {
+.info-block  ul {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 16px;
   line-height: 28px;
 }
 
-.footer-button {
+.footer-menu {
   color: rgba(255, 255, 255, 0.7);
+  list-style-type: none;
 }
 
 .footer-services {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--basic-white);
+  list-style-type: none;
 }
 
-footer p{
+.footer-text {
   color: var(--basic-white);
 }
 
+.footer-social {
+  list-style-type: none;
+}
+
 .inner-page h2 {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 47px;
   line-height: 58px;
 }
@@ -149,9 +208,12 @@ footer p{
   font-size: 14px;
   line-height: 19px;
   opacity: 0.3;
+  list-style-type: none;
 }
 
 .inner-page h3 {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.1em;
@@ -159,19 +221,31 @@ footer p{
 }
 
 .inner-page legend {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
 }
 
 .pricerange p {
+  font-family: "Gilroy Light";
+  font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+}
+
+.color-filter ul {
+  list-style-type: none;
 }
 
 .color-filter li {
   font-size: 14px;
   line-height: 19px;
+}
+
+.bluetooth-filter ul {
+  list-style-type: none;
 }
 
 .bluetooth-filter li {
@@ -186,20 +260,27 @@ footer p{
 }
 
 .catalog-card h3 {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
 }
 
 .catalog-card p {
+  font-family: "Gilroy Light";
+  font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
 }
 
 .pagination {
+  font-family: "Gilroy";
+  font-weight: 800;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  list-style-type: none;
 }
