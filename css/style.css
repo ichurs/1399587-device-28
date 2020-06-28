@@ -176,7 +176,8 @@ img {
 }
 
 .footer-menu {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--basic-white);
+  opacity: 0.7;
   list-style-type: none;
 }
 
@@ -197,6 +198,10 @@ img {
 
 .footer-social {
   list-style-type: none;
+}
+
+.footer-social svg {
+  opacity: 0.3;
 }
 
 .inner-page h2 {
@@ -286,4 +291,40 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   list-style-type: none;
+}
+
+.pagination .page-number {
+  opacity: 0.3;
+}
+
+.device-logo:hover,
+.text-link li:hover,
+.breadcrumbs li:hover,
+.pagination .page-number:hover,
+.htmlacademy-logo:hover,
+.footer-services li:hover {
+  opacity: 0.6;
+}
+
+.device-logo:active,
+.text-link li:active,
+.popular p:active,
+.popular svg:active,
+.pagination .backward:active,
+.pagination .forward:active,
+.footer-menu li:active,
+.footer-social svg:hover,
+.htmlacademy-logo:active,
+.footer-services li:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs li:active,
+.footer-social svg:active {
+  opacity: 0.1;
+}
+
+.pagination .page-number:active,
+.footer-menu li:hover {
+  opacity: 1;
 }
