@@ -298,33 +298,41 @@ img {
 }
 
 .device-logo:hover,
-.text-link li:hover,
-.breadcrumbs li:hover,
-.pagination .page-number:hover,
+.text-link:hover,
+.breadcrumbs a:hover,
+.pagination a:hover,
 .htmlacademy-logo:hover,
-.footer-services li:hover {
+.footer-services a:hover {
   opacity: 0.6;
 }
 
+.popular img:hover {
+  background-color: var(--special-yellow-dark);
+}
+
+.popular img:active {
+  opacity: 0.3;
+  background-color: var(--special-yellow-dark);
+}
+
 .device-logo:active,
-.text-link li:active,
-.popular p:active,
-.popular svg:active,
+.text-link:active,
+.popular-link p:active,
 .pagination .backward:active,
 .pagination .forward:active,
-.footer-menu li:active,
+.footer-menu a:active,
 .footer-social svg:hover,
 .htmlacademy-logo:active,
-.footer-services li:active {
+.footer-services a:active {
   opacity: 0.3;
 }
 
-.breadcrumbs li:active,
+.breadcrumbs a:active,
 .footer-social svg:active {
   opacity: 0.1;
 }
 
 .pagination .page-number:active,
-.footer-menu li:hover {
+.footer-menu a:hover {
   opacity: 1;
 }
