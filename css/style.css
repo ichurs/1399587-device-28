@@ -306,33 +306,33 @@ img {
   opacity: 0.6;
 }
 
-.popular img:hover {
+.popular:hover img {
   background-color: var(--special-yellow-dark);
 }
 
-.popular img:active {
+.popular:active img {
   opacity: 0.3;
   background-color: var(--special-yellow-dark);
 }
 
 .device-logo:active,
 .text-link:active,
-.popular-link p:active,
-.pagination .backward:active,
-.pagination .forward:active,
+.popular-link:active p,
+.backward a:active,
+.forward a:active,
 .footer-menu a:active,
-.footer-social svg:hover,
+.footer-social:hover svg,
 .htmlacademy-logo:active,
 .footer-services a:active {
   opacity: 0.3;
 }
 
 .breadcrumbs a:active,
-.footer-social svg:active {
+.footer-social:active svg {
   opacity: 0.1;
 }
 
-.pagination .page-number:active,
+.page-number a:active,
 .footer-menu a:hover {
   opacity: 1;
 }
