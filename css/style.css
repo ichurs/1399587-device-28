@@ -306,11 +306,11 @@ img {
   opacity: 0.6;
 }
 
-.popular:hover img {
+.popular-link:hover img {
   background-color: var(--special-yellow-dark);
 }
 
-.popular:active img {
+.popular-link:active img {
   opacity: 0.3;
   background-color: var(--special-yellow-dark);
 }
