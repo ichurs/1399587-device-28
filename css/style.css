@@ -302,7 +302,7 @@ img {
 .breadcrumbs a:hover,
 .pagination a:hover,
 .htmlacademy-logo:hover,
-.footer-services a:hover {
+.footer-services-link a:hover {
   opacity: 0.6;
 }
 
@@ -320,19 +320,19 @@ img {
 .popular-link:active p,
 .backward a:active,
 .forward a:active,
-.footer-menu a:active,
-.footer-social:hover svg,
+.footer-menu-link a:active,
+.footer-social-link:hover svg,
 .htmlacademy-logo:active,
-.footer-services a:active {
+.footer-services-link a:active {
   opacity: 0.3;
 }
 
 .breadcrumbs a:active,
-.footer-social:active svg {
+.footer-social-link:active svg {
   opacity: 0.1;
 }
 
 .page-number a:active,
-.footer-menu a:hover {
+.footer-menu-link a:hover {
   opacity: 1;
 }
